@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('./header.css');
+@import url('./menuMobile.css');
+@import url('./about.css');
+
+:root {
+    --primary-color-black: #000000;
+    --secundary-color-black: #191A23;
+    --primary-color-light: #FFFFFF;
+    --primary-color-grey: #F3F3F3;
+    --primary-color-green: #B9FF66;
+    --padding-padrao: 0px 6.25rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +20,7 @@
 }
 
 body {
-    background: #FFFFFF;
+    background: var(--primary-color-light);
 }
 
 ul {
@@ -21,7 +33,7 @@ a {
 
 .btn-default {
     padding: 1.25rem 2.188rem;
-    color: #000000;
+    color: var(--primary-color-black);
     font-size: 1.25rem;
     font-weight: 100;
     background-color: #FFFFFF;
@@ -29,4 +41,14 @@ a {
     border-radius: 14px;
     cursor: pointer;
     transition: background .3s ease;
+}
+
+main section {
+    min-height: calc(100vh - 68px);
+}
+
+@media screen and (max-width: 1130px) {
+    main section {
+        min-height: calc(100vh - 55.92px);
+    }
 }

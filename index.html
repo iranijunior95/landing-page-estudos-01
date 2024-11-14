@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,98 +10,102 @@
 <body>
     <header>
         <nav>
-            <img src="./assets/img/Logo.png" alt="logo" class="nav-img-logo">
+            <img src="./assets/img/Logo.png" alt="logo" id="nav-img-logo">
 
-            <div class="nav-list-group">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
+            <ul id="nav-list">
+                <li>
+                    <a href="#about">About us</a>
+                </li>
 
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
 
-                    <li>
-                        <a href="#">Use Cases</a>
-                    </li>
+                <li>
+                    <a href="#">Use Cases</a>
+                </li>
 
-                    <li>
-                        <a href="#">Picing</a>
-                    </li>
+                <li>
+                    <a href="#">Picing</a>
+                </li>
 
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
 
-                <button type="button" class="btn-default">Request a quote</button>
-            </div>
+                <button type="button">Request a quote</button>
+            </ul>
 
-            <button type="button" class="btn-menu-mobile">
+            <button type="button" id="btn-menu-mobile">
                 <img src="./assets/img/Burger menu icon.svg" alt="btn menu">
             </button>
         </nav>
+    </header>
 
-        <div class="menu-mobile">
-            <div class="mobile-conteudo">
-                <ul class="nav-list-mobile">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
+    <!-- Menu Nobile Inicio -->
+    <div id="menu-mobile">
+        <div id="menu-mobile-conteudo">
+            <ul id="nav-list-mobile">
+                <li>
+                    <a href="#">About us</a>
+                </li>
 
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
 
-                    <li>
-                        <a href="#">Use Cases</a>
-                    </li>
+                <li>
+                    <a href="#">Use Cases</a>
+                </li>
 
-                    <li>
-                        <a href="#">Picing</a>
-                    </li>
+                <li>
+                    <a href="#">Picing</a>
+                </li>
 
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
 
-                <button type="button" class="btn-default">Request a quote</button>
-            </div>
+            <button type="button">Request a quote</button>
         </div>
+    </div>
+    <!-- Menu Nobile Fim -->
 
-        <div class="header-section">
-            <div class="header-title">
+    <main>
+        <section id="about">
+            <div id="about-conteudo">
+                <div id="conteudo-info">
+                    <h1>Navigating the digital landscape for success</h1>
+
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+    
+                    <button type="button" class="btn-default">Book a consulation</button>
+                </div>
+
+                <img src="./assets/img/Illustration.png" alt="Banner" class="about-banner">
+            </div>
+
+            <div id="about-conteudo-mobile">
                 <h1>Navigating the digital landscape for success</h1>
 
+                <img src="./assets/img/Illustration.png" alt="Banner" class="about-banner">
+
                 <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                
-                <button type="button" class="btn-default">Book a consultation</button>
+
+                <button type="button" class="btn-default">Book a consulation</button>
             </div>
 
-            <img src="./assets/img/Illustration.png" alt="Illustration" class="header-ilustration-img">
-        </div>
-
-        <div class="header-section-mobile">
-            <h1>Navigating the digital landscape for success</h1>
-
-            <img src="./assets/img/Illustration.png" alt="Illustration" class="header-ilustration-img">
-
-            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                
-            <button type="button" class="btn-default">Book a consultation</button>
-        </div>
-
-        <div class="logotipos">
-            <img src="./assets/img/Company-amazon.svg" alt="logo amazon">
-            <img src="./assets/img/Company-dribbble.svg" alt="logo amazon">
-            <img src="./assets/img/Company-hubsport.svg" alt="logo amazon">
-            <img src="./assets/img/Company-notion.svg" alt="logo amazon">
-            <img src="./assets/img/Company-netflix.svg" alt="logo amazon">
-            <img src="./assets/img/Company-zoom.svg" alt="logo amazon">
-        </div>
-    </header>
+            <div id="about-logotipos">
+                <img src="./assets/img/Company-amazon.svg" alt="logo amazon">
+                <img src="./assets/img/Company-dribbble.svg" alt="logo dribbble">
+                <img src="./assets/img/Company-hubsport.svg" alt="logo hubsport">
+                <img src="./assets/img/Company-netflix.svg" alt="logo netiflix">
+                <img src="./assets/img/Company-notion.svg" alt="logo notion">
+                <img src="./assets/img/Company-zoom.svg" alt="logo zoom">
+            </div>
+        </section>
+    </main>
 
     <script src="./assets/js/script.js"></script>
 </body>

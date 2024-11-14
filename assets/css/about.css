@@ -1,0 +1,147 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.188rem;
+}
+
+#about-conteudo {
+    width: 100%;
+    margin-top: 2.188rem;
+    padding: var(--padding-padrao);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: auto;
+}
+
+#conteudo-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.188rem;
+}
+
+#conteudo-info > h1 {
+    font-size: 3.375rem;
+    text-align: left;
+}
+
+#conteudo-info > p {
+    font-size: 1.25rem;
+    text-align: start;
+}
+
+#conteudo-info .btn-default {
+    background: var(--secundary-color-black);
+    color: var(--primary-color-light);
+    border: 1px solid var(--primary-color-black);
+}
+
+.about-banner {
+    width: 50%;
+    height: auto;
+}
+
+#about-conteudo-mobile {
+    display: none;
+}
+
+#about-logotipos {
+    width: 100%;
+    padding: var(--padding-padrao);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-logotipos > img {
+    width: 145px;
+    height: 48px;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 1240px) {
+    #about-conteudo {
+        padding: 0px 40px;
+    }
+
+    #conteudo-info > h1 {
+        font-size: 2.9rem;
+    }
+
+    #about-logotipos {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #about-conteudo {
+        display: none;
+    }
+
+    #about-conteudo-mobile {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1.188rem;
+    }
+
+    #about-conteudo-mobile > h1 {
+        margin-top: 20px;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .about-banner {
+        width: 40%;
+        height: auto;
+        margin: auto;
+    }
+
+    #about-conteudo-mobile > p {
+        font-size: 1.25rem;
+        text-align: start;
+    }
+
+    #about-conteudo-mobile .btn-default {
+        width: 90%;
+        background: var(--secundary-color-black);
+        color: var(--primary-color-light);
+        border: 1px solid var(--primary-color-black);
+        margin: auto;
+    }
+
+    #about-logotipos {
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    #about-logotipos > img {
+        width: 30%;
+    }
+
+    #about-logotipos > img:nth-child(1) {
+        margin-left: 30px;
+    }
+
+    #about-logotipos > img:nth-child(6) {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #about-conteudo-mobile > h1 {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .about-banner {
+        width: 50%;
+    }
+}
