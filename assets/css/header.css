@@ -82,4 +82,8 @@ nav {
     nav {
         padding: 0px 20px;
     }
+
+    #nav-img-logo {
+        width: 9.721rem;
+    }
 }
