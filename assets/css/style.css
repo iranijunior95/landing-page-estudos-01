@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./menuMobile.css');
 @import url('./about.css');
+@import url('./services.css');
 
 :root {
     --primary-color-black: #000000;
@@ -47,8 +48,56 @@ main section {
     min-height: calc(100vh - 68px);
 }
 
+.section-headers {
+    width: 100%;
+    padding-top: 4.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.section-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color-green);
+    border-radius: 7px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0px 7px;
+}
+
+.section-headers > p {
+    width: 50%;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 @media screen and (max-width: 1130px) {
     main section {
         min-height: calc(100vh - 55.92px);
+    }
+
+    .section-headers > p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    main section {
+        min-height: calc(100vh - 45.44px);
+    }
+
+    .section-headers {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section-headers > p {
+        width: 100%;
+        text-align: center;
     }
 }

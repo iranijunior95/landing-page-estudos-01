@@ -1,14 +1,226 @@
 #services {
-    min-height: calc(100vh - 69px);
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: var(--padding-padrao);
 }
 
-.services-header {
-    
-    background-color: red;
+#services-block {
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.services-block-card {
+    padding: 3.125rem;
+    border: 1px solid var(--primary-color-black);
+    border-radius: 45px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.92);
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    gap: auto;
+    width: 48%;
+}
+
+.card-greey {
+    background: var(--primary-color-grey);
+}
+
+.card-black {
+    background: var(--secundary-color-black);
+}
+
+.card-green {
+    background: var(--primary-color-green);
+}
+
+.block-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5.813rem;
+}
+
+.block-card-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block-card-titulo h3 {
+    border-radius: 7px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0px 7px;
+}
+
+.block-card-titulo-green {
+    background: var(--primary-color-green);
+    color: var(--secundary-color-black);
+}
+
+.block-card-titulo-grey {
+    background: var(--primary-color-light);
+    color: var(--secundary-color-black);
+}
+
+.block-card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.block-card-link a {
+    color: var(--primary-color-black);
+}
+
+.block-card-mobile {
+    display: none;
+}
+
+.color-light {
+    color: var(--primary-color-light) !important;
+}
+
+#services-cta-card {
+    background: var(--primary-color-grey);
+    width: 100%;
+    height: 347px;
+    padding: 0px 60px;
+    border-radius: 45px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#cta-card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+#cta-card > h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+#cta-card > p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#cta-card > button {
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: 100;
+    background: var(--secundary-color-black);
+    color: var(--primary-color-light);
+    border: none;
+    border-radius: 14px;
+}
+
+#services-cta-card > img {
+    position: absolute;
+    right: 0;
+    width: 494px;
+    height: 394px;
+}
+
+@media screen and (max-width: 1290px) {
+    #cta-card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #services {
+        padding: 0px 40px;
+    }
+
+    #cta-card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1140px) { 
+    #cta-card {
+        width: 75%;
+    }
+
+    #services-cta-card > img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) { 
+    #services-block {
+        flex-direction: column;
+    }
+
+    .services-block-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #services {
+        padding: 0px 20px;
+    }
+
+    .services-block-card {
+        width: 100%;
+    }
+
+    #cta-card {
+        width: 100%;
+    }
+
+    #cta-card > button {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 560px) { 
+    .services-block-card {
+        flex-wrap: wrap;
+    }
+
+    .block-card-header {
+        width: 100%;
+        gap: 27px;
+    }
+
+    .block-card-link {
+        display: none;
+    }
+
+    .block-card-ilustracion {
+        display: none;
+    }
+
+    .block-card-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .block-card-mobile > img:nth-child(2) {
+        width: 50%;
+    }
 }
