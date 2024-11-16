@@ -3,6 +3,7 @@
 @import url('./menuMobile.css');
 @import url('./about.css');
 @import url('./services.css');
+@import url('./cases.css');
 
 :root {
     --primary-color-black: #000000;

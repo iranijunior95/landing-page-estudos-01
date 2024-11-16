@@ -1,6 +1,6 @@
 #menu-mobile {
     width: 0%;
-    min-height: calc(100% - 55.92px); 
+    min-height: calc(100% - 55.92px);
     position: fixed;
     z-index: 1; 
     right: 0;
@@ -13,7 +13,7 @@
 
 #menu-mobile-conteudo {
     width: 0%; 
-    min-height: calc(100% - 55.92px); 
+    min-height: calc(100% - 55.92px);
     position: fixed;
     z-index: 9; 
     right: 0;
@@ -66,11 +66,11 @@
 
 @media screen and (max-width: 880px) {
     #menu-mobile {
-        min-height: calc(100% - 45.44px); 
+        min-height: calc(100% - 45.44px);
     }
 
     #menu-mobile-conteudo {
-        min-height: calc(100% - 45.44px); 
+        min-height: calc(100% - 45.44px);
     }
 
     #menu-mobile.active #menu-mobile-conteudo {
