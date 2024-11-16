@@ -65,8 +65,13 @@
 }
 
 @media screen and (max-width: 880px) {
+    #menu-mobile.active {
+        min-height: calc(100% - 45.44px); 
+    }
+
     #menu-mobile.active #menu-mobile-conteudo {
         width: 60%;
+        min-height: calc(100% - 45.44px); 
     }
 }
 
