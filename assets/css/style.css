@@ -4,6 +4,7 @@
 @import url('./about.css');
 @import url('./services.css');
 @import url('./cases.css');
+@import url('./picing.css');
 
 :root {
     --primary-color-black: #000000;
