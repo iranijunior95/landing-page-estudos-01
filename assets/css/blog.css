@@ -39,6 +39,7 @@
 .blog-cards-img-user {
     height: 105px;
     width: 102px;
+    object-fit: cover;
 }
 
 .blog-cards-header-titulos {
