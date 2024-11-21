@@ -5,6 +5,7 @@
 @import url('./services.css');
 @import url('./cases.css');
 @import url('./picing.css');
+@import url('./blog.css');
 
 :root {
     --primary-color-black: #000000;
@@ -66,14 +67,14 @@ main section {
     justify-content: center;
     background: var(--primary-color-green);
     border-radius: 7px;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 500;
     padding: 0px 7px;
 }
 
 .section-headers > p {
     width: 50%;
-    font-size: 1rem;
+    font-size: 18px;
     text-align: justify;
 }
 

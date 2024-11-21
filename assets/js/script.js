@@ -21,5 +21,4 @@
             $pircingCardImg[index].setAttribute('src', './assets/img/negative-icon.svg');
         }
     }
-
 }());
