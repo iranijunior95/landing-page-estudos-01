@@ -119,8 +119,12 @@ footer {
     border: none;
     border-radius: 14px;
     font-size: 18px;
-    white-space: nowrap;
+    white-space: none;
     cursor: pointer;
+}
+
+#icones-social-footer-mobile {
+    display: none;
 }
 
 #footer-footer {
@@ -134,4 +138,108 @@ footer {
 #footer-footer > p {
     font-size: 18px;
     color: var(--primary-color-light);
+}
+
+@media screen and (max-width: 1240px) {
+    footer {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    footer {
+        padding: 0px 20px;
+    }
+
+    #icones-social-footer {
+        display: none;
+    }
+
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+    }
+
+    #contact-us-footer {
+        align-items: center;
+        gap: 37px;
+    }
+
+    #grupo-p {
+        align-items: center;
+    }
+
+    #icones-social-footer-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #icones-social-footer-mobile > img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    footer {
+        padding: 0px 0px;
+    }
+
+    #corpo-footer {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    #header-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 37px;
+    }
+
+    #grupo-p > p {
+        text-align: center;
+    }
+
+    #form-email-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        width: 100%;
+        padding: 30px;
+    }
+
+    #form-email-footer > input {
+        width: 100%;
+    }
+
+    #form-email-footer > button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px)  {
+    #header-footer {
+        margin-bottom: 37px;
+    }
+
+    #menu-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #footer-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
 }
