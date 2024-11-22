@@ -24,6 +24,10 @@
     font-family: "Space Grotesk", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--primary-color-light);
 }

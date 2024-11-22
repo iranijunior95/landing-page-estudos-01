@@ -119,7 +119,7 @@ footer {
     border: none;
     border-radius: 14px;
     font-size: 18px;
-    white-space: none;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -221,6 +221,8 @@ footer {
 
     #form-email-footer > button {
         width: 100%;
+        white-space: normal;
+        text-align: center;
     }
 }
 
