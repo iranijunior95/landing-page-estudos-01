@@ -6,6 +6,7 @@
 @import url('./cases.css');
 @import url('./picing.css');
 @import url('./blog.css');
+@import url('./footer.css');
 
 :root {
     --primary-color-black: #000000;

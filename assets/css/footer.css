@@ -1,0 +1,137 @@
+footer {
+    padding: var(--padding-padrao);
+    margin-top: 3rem;
+}
+
+#corpo-footer {
+    background: var(--secundary-color-black);
+    padding: 55px 60px 50px 60px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#header-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+#header-footer > img {
+    width: 180px;
+    height: 29px;
+    object-fit: cover;
+}
+
+#menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+#menu-footer a {
+    font-size: 18px;
+    color: var(--primary-color-light);
+}
+
+#icones-social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#icones-social-footer > img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+#main-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 154px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--primary-color-grey);
+}
+
+#contact-us-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 27px;
+    
+}
+
+#contact-us-footer > span {
+    width: 126px;
+    height: 26px;
+    padding: 0px 7px;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--primary-color-green);
+    border-radius: 7px;
+}
+
+#grupo-p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+#grupo-p > p {
+    font-size: 18px;
+    color: var(--primary-color-light);
+}
+
+#form-email-footer {
+    background: #292A32;
+    padding: 58px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 14px;
+}
+
+#form-email-footer > input {
+    padding: 22px 35px;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 14px;
+    outline: none;
+    background: #292A32;
+    font-size: 18px;
+    color: var(--primary-color-light);
+    
+}
+
+#form-email-footer > button {
+    padding: 20px 35px;
+    font-size: 18px;
+    background: var(--primary-color-green);
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#footer-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+#footer-footer > p {
+    font-size: 18px;
+    color: var(--primary-color-light);
+}
